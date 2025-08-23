@@ -6,8 +6,9 @@ import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
 
 import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.Conditions.hasIngotProperty;
 import static org.cristal.cmmeadditions.api.CmmeMaterialFlags.*;
-
+@SuppressWarnings("unused")
 public class CmmeTagPrefix {
+
     public static final com.gregtechceu.gtceu.api.data.tag.TagPrefix doubleIngot = new com.gregtechceu.gtceu.api.data.tag.TagPrefix("doubleIngot")
             .idPattern("double_%s_ingot")
             .defaultTagPath("double_ingots/%s")
