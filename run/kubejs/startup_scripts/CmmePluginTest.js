@@ -1,3 +1,3 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
-     GTMaterials.Tin.addFlags(CMMEMaterialFlags.GENERATE_QUADRUPLE_INGOTS)
+     GTMaterials.Tin.addFlags(CMMEMaterialFlags.GENERATE_QUADRUPLE_INGOT)
 })

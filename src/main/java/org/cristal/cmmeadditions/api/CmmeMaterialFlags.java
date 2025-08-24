@@ -1,27 +1,53 @@
 package org.cristal.cmmeadditions.api;
 
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlag;
+import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags;
 import com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey;
+
+import static com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags.GENERATE_PLATE;
 
 public class CmmeMaterialFlags {
 
     public CmmeMaterialFlags(){
     }
 
-    public static final MaterialFlag GENERATE_DOUBLE_INGOTS = new MaterialFlag.Builder("generate_double_ingots")
+    public static final MaterialFlag GENERATE_DOUBLE_INGOT = new MaterialFlag.Builder("generate_double_ingot")
             .requireProps(PropertyKey.INGOT)
             .build();
 
-    public static final MaterialFlag GENERATE_TRIPLE_INGOTS = new MaterialFlag.Builder("generate_triple_ingots")
+    public static final MaterialFlag GENERATE_TRIPLE_INGOT = new MaterialFlag.Builder("generate_triple_ingot")
             .requireProps(PropertyKey.INGOT)
             .build();
 
-    public static final MaterialFlag GENERATE_QUADRUPLE_INGOTS = new MaterialFlag.Builder("generate_quadruple_ingots")
+    public static final MaterialFlag GENERATE_QUADRUPLE_INGOT = new MaterialFlag.Builder("generate_quadruple_ingot")
             .requireProps(PropertyKey.INGOT)
             .build();
 
-    public static final MaterialFlag GENERATE_QUINTUPLE_INGOTS = new MaterialFlag.Builder("generate_quadruple_ingots")
+    public static final MaterialFlag GENERATE_QUINTUPLE_INGOT = new MaterialFlag.Builder("generate_quintuple_ingot")
             .requireProps(PropertyKey.INGOT)
+            .build();
+
+    public static final MaterialFlag GENERATE_TRIPLE_PLATE = new MaterialFlag.Builder("generate_triple_plate")
+            .requireFlags(GENERATE_PLATE)
+            .requireProps(PropertyKey.DUST)
+            .build();
+
+    public static final MaterialFlag GENERATE_QUADRUPLE_PLATE = new MaterialFlag.Builder("generate_quadruple_plate")
+            .requireFlags(GENERATE_PLATE)
+            .requireProps(PropertyKey.DUST)
+            .build();
+
+    public static final MaterialFlag GENERATE_QUINTUPLE_PLATE = new MaterialFlag.Builder("generate_quintuple_plate")
+            .requireFlags(GENERATE_PLATE)
+            .requireProps(PropertyKey.DUST)
+            .build();
+
+    public static final MaterialFlag GENERATE_SUPERDENSE = new MaterialFlag.Builder("generate_superdense")
+            .requireFlags(GENERATE_PLATE)
+            .requireProps(PropertyKey.DUST)
+            .build();
+
+    public static final MaterialFlag GENERATE_SINGULARITY = new MaterialFlag.Builder("generate_singularity")
             .build();
 
     public static void register(){

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gtceu:item/material_sets/rough/ingot_quintuple",
+    "layer2": "gtceu:item/material_sets/rough/ingot_quintuple_overlay"
+  }
+}

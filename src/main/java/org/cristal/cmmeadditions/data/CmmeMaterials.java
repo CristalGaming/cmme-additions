@@ -11,8 +11,55 @@ public class CmmeMaterials extends Material {
         super(resourceLocation);
     }
     public static void init() {
-        GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS,GENERATE_TRIPLE_INGOTS,GENERATE_QUADRUPLE_INGOTS,GENERATE_QUINTUPLE_INGOTS);
-        GTMaterials.Aluminium.addFlags(GENERATE_DOUBLE_INGOTS,GENERATE_TRIPLE_INGOTS,GENERATE_QUADRUPLE_INGOTS,GENERATE_QUINTUPLE_INGOTS);
-        GTMaterials.Steel.addFlags(GENERATE_DOUBLE_INGOTS,GENERATE_TRIPLE_INGOTS,GENERATE_QUADRUPLE_INGOTS,GENERATE_QUINTUPLE_INGOTS);
+        GTMaterials.Iron.addFlags(
+                GENERATE_DOUBLE_INGOT,
+                GENERATE_TRIPLE_INGOT,
+                GENERATE_QUADRUPLE_INGOT,
+                GENERATE_QUINTUPLE_INGOT,
+                GENERATE_TRIPLE_PLATE,
+                GENERATE_QUADRUPLE_PLATE,
+                GENERATE_QUINTUPLE_PLATE,
+                GENERATE_SUPERDENSE,
+                GENERATE_SINGULARITY
+        );
+        GTMaterials.Aluminium.addFlags(
+                GENERATE_DOUBLE_INGOT,
+                GENERATE_TRIPLE_INGOT,
+                GENERATE_QUADRUPLE_INGOT,
+                GENERATE_QUINTUPLE_INGOT,
+                GENERATE_TRIPLE_PLATE,
+                GENERATE_QUADRUPLE_PLATE,
+                GENERATE_QUINTUPLE_PLATE,
+                GENERATE_SUPERDENSE,
+                GENERATE_SINGULARITY
+        );
+        GTMaterials.Steel.addFlags(
+                GENERATE_DOUBLE_INGOT,
+                GENERATE_TRIPLE_INGOT,
+                GENERATE_QUADRUPLE_INGOT,
+                GENERATE_QUINTUPLE_INGOT,
+                GENERATE_TRIPLE_PLATE,
+                GENERATE_QUADRUPLE_PLATE,
+                GENERATE_QUINTUPLE_PLATE,
+                GENERATE_SUPERDENSE,
+                GENERATE_SINGULARITY
+        );
+        GTMaterials.Silver.addFlags(
+                GENERATE_DOUBLE_INGOT,
+                GENERATE_TRIPLE_INGOT,
+                GENERATE_QUADRUPLE_INGOT,
+                GENERATE_QUINTUPLE_INGOT,
+                GENERATE_TRIPLE_PLATE,
+                GENERATE_QUADRUPLE_PLATE,
+                GENERATE_QUINTUPLE_PLATE,
+                GENERATE_SUPERDENSE,
+                GENERATE_SINGULARITY
+        );
+        GTMaterials.Diamond.addFlags(
+                GENERATE_TRIPLE_PLATE,
+                GENERATE_QUADRUPLE_PLATE,
+                GENERATE_QUINTUPLE_PLATE,
+                GENERATE_SUPERDENSE
+        );
     }
 }

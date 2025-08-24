@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gtceu:item/material_sets/rough/ingot_triple",
+    "layer2": "gtceu:item/material_sets/rough/ingot_triple_overlay"
+  }
+}
