@@ -106,7 +106,7 @@ public class CmmeTagPrefix {
             .defaultTagPath("superdense_plates/%s")
             .unformattedTagPath("superdense_plates")
             .langValue("Superdense %s Plate")
-            .materialAmount(GTValues.M*18)
+            .materialAmount(GTValues.M*64)
             .maxStackSize(16)
             .materialIconType(new MaterialIconType("plateSuperdense"))
             .unificationEnabled(true)
