@@ -1,5 +1,6 @@
 modLoader = "javafml" #mandatory
 loaderVersion = "${loader_version_range}"
+logoFile="logo.png"
 license = "${mod_license}"
 [[mods]]
 modId = "${mod_id}"
