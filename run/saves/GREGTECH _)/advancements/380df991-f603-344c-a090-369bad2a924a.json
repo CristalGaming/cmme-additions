@@ -9,7 +9,8 @@
     "criteria": {
       "minecraft:birch_forest": "2025-08-22 13:04:12 +0300",
       "minecraft:beach": "2025-08-24 11:46:49 +0300",
-      "minecraft:river": "2025-08-24 10:17:21 +0300"
+      "minecraft:river": "2025-08-24 10:17:21 +0300",
+      "minecraft:ocean": "2025-09-19 17:48:15 +0300"
     },
     "done": false
   },
@@ -220,6 +221,12 @@
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "in_water": "2025-08-24 10:51:29 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/glow_item_frame": {
+    "criteria": {
+      "has_item_frame": "2025-09-19 17:26:28 +0300"
     },
     "done": true
   },
