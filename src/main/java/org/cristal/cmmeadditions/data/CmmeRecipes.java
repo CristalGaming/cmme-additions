@@ -32,6 +32,10 @@ public final class CmmeRecipes {
         processIngotQuintuple(provider,material);
     }
     private static void processPlateDoubleAddition(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material){
+        if (!material.shouldGenerateRecipesFor(plateDouble) || !material.hasProperty(PropertyKey.INGOT)){
+            return;
+        }
+
         var magMaterial = material.hasFlag(IS_MAGNETIC) ?
                 material.getProperty(PropertyKey.INGOT).getMacerateInto() : material;
 
@@ -286,6 +290,7 @@ public final class CmmeRecipes {
                     "D", "P", "h",
                     'P', new MaterialEntry(ingot, material),
                     'D', new MaterialEntry(tripleIngot,material));
+
             VanillaRecipeHelper.addShapedRecipe(provider, String.format("double_ingots_quadruple_%s", material.getName()),
                     ChemicalHelper.get(quadrupleIngot, magMaterial),
                     "P", "P", "h",
@@ -325,7 +330,7 @@ public final class CmmeRecipes {
                     "D", "P", "h",
                     'P', new MaterialEntry(ingot, material),
                     'D', new MaterialEntry(quadrupleIngot,material));
-            VanillaRecipeHelper.addShapedRecipe(provider, String.format("double_ingots_quadruple_%s", material.getName()),
+            VanillaRecipeHelper.addShapedRecipe(provider, String.format("double_ingots_quintuple_%s", material.getName()),
                     ChemicalHelper.get(quintupleIngot, magMaterial),
                     "D", "P", "h",
                     'P', new MaterialEntry(doubleIngot, material),
