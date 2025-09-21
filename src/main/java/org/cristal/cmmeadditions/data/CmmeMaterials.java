@@ -56,6 +56,7 @@ public class CmmeMaterials extends Material {
                 GENERATE_SINGULARITY
         );
         GTMaterials.Diamond.addFlags(
+                GENERATE_DOUBLE_PLATE,
                 GENERATE_TRIPLE_PLATE,
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,

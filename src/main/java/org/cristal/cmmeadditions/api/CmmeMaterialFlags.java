@@ -27,6 +27,11 @@ public class CmmeMaterialFlags {
             .requireProps(PropertyKey.INGOT)
             .build();
 
+    public static final MaterialFlag GENERATE_DOUBLE_PLATE = new MaterialFlag.Builder("generate_double_plate")
+            .requireFlags(GENERATE_PLATE)
+            .requireProps(PropertyKey.DUST)
+            .build();
+
     public static final MaterialFlag GENERATE_TRIPLE_PLATE = new MaterialFlag.Builder("generate_triple_plate")
             .requireFlags(GENERATE_PLATE)
             .requireProps(PropertyKey.DUST)
