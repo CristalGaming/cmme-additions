@@ -22,6 +22,6 @@ public class CmmeRegistries {
     public static void registerMaterials(MaterialEvent event){
         CmmeMaterialFlags.register();
         CmmeTagPrefix.register();
-        CmmeMaterials.init();
+        //CmmeMaterials.init();
     }
 }
