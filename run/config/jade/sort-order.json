@@ -125,6 +125,7 @@
   "gtceu:hazard_cleaner_provider": null,
   "gtceu:transformer": null,
   "gtceu:primitive_pump": null,
+  "gtceu:data_bank": null,
   "gtceu:energy_converter_provider": null,
   "gtceu:custom_item_storage": null,
   "gtceu:custom_fluid_storage": null,
