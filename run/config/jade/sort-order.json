@@ -64,6 +64,7 @@
   "gtceu:custom_item_storage": null,
   "gtceu:custom_fluid_storage": null,
   "gtceu:fluid_storage": null,
+  "gtceu:data_bank": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
   "minecraft:command_block": null,
