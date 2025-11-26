@@ -1,338 +1,202 @@
-[16nov.2025 10:31:47.772] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\elise\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.6, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, cmmeadditions.mixins.json]
-[16nov.2025 10:31:47.779] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[16nov.2025 10:31:48.214] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[16nov.2025 10:31:48.330] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[16nov.2025 10:31:48.410] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[16nov.2025 10:31:48.591] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/elise/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[16nov.2025 10:31:48.603] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) UHD Graphics GL version 4.6.0 - Build 31.0.101.2137, Intel
-[16nov.2025 10:31:49.377] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.6\9e86bf67e222253576e982856d9958695725adb5\javafmllanguage-1.20.1-47.4.6.jar is missing mods.toml file
-[16nov.2025 10:31:49.383] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.6\56100545804adc991cc48ab68b86ba46c5873246\lowcodelanguage-1.20.1-47.4.6.jar is missing mods.toml file
-[16nov.2025 10:31:49.389] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.6\fd228d7d879a9da774eda022ea3092cedb5178f1\mclanguage-1.20.1-47.4.6.jar is missing mods.toml file
-[16nov.2025 10:31:49.402] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.6\cefc55ada370ce2f23f92834530eb967c0de1fdd\fmlcore-1.20.1-47.4.6.jar is missing mods.toml file
-[16nov.2025 10:31:50.092] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[16nov.2025 10:31:53.180] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[16nov.2025 10:31:53.212] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\elise\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[16nov.2025 10:31:53.285] [main/WARN] [mixin/]: Reference map 'cmmeadditions.refmap.json' for cmmeadditions.mixins.json could not be read. If this is a development environment you can ignore this message
-[16nov.2025 10:31:53.768] [main/INFO] [mixin/]: Remapping refMap rhino-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.769] [main/INFO] [mixin/]: Remapping refMap configuration.refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.771] [main/INFO] [mixin/]: Remapping refMap jade.refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.783] [main/INFO] [mixin/]: Remapping refMap architectury-forge-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.784] [main/INFO] [mixin/]: Remapping refMap architectury-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.790] [main/INFO] [mixin/]: Remapping refMap ldlib-common-1.20.1-ldlib-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.793] [main/INFO] [mixin/]: Remapping refMap ldlib-forge-1.20.1-ldlib-forge-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.795] [main/INFO] [mixin/]: Remapping refMap kubejs-forge-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.797] [main/INFO] [mixin/]: Remapping refMap kubejs-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:53.802] [main/INFO] [mixin/]: Remapping refMap gtceu.refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
-[16nov.2025 10:31:55.315] [main/WARN] [mixin/]: Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)
-[16nov.2025 10:31:55.319] [main/WARN] [mixin/]: Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)
-[16nov.2025 10:31:55.610] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0-rc.3).
-[16nov.2025 10:32:03.400] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 159 milliseconds
-[16nov.2025 10:32:06.352] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/elise/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.6_mapped_official_1.20.1/forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[16nov.2025 10:32:06.356] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/elise/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.6_mapped_official_1.20.1/forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[16nov.2025 10:32:06.395] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[16nov.2025 10:32:06.412] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[16nov.2025 10:32:06.603] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[16nov.2025 10:32:06.670] [Render thread/INFO] [KubeJS/]: Loaded client.properties
-[16nov.2025 10:32:07.116] [modloading-worker-0/INFO] [GregTechCEu/]: GregTechCEu is initializing...
-[16nov.2025 10:32:07.135] [modloading-worker-0/INFO] [LowDragLib/]: LowDragLib is initializing on platform: Forge
-[16nov.2025 10:32:07.153] [modloading-worker-0/INFO] [KubeJS/]: Loaded common.properties
-[16nov.2025 10:32:07.154] [modloading-worker-0/INFO] [KubeJS/]: Loaded dev.properties
-[16nov.2025 10:32:07.163] [modloading-worker-0/INFO] [KubeJS Startup/]: Capturing errors for startup scripts enabled
-[16nov.2025 10:32:07.163] [modloading-worker-0/INFO] [KubeJS/]: Looking for KubeJS plugins...
-[16nov.2025 10:32:07.200] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs
-[16nov.2025 10:32:07.308] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping
-[16nov.2025 10:32:07.309] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source gtceu
-[16nov.2025 10:32:07.393] [modloading-worker-0/INFO] [Configuration/FileWatching]: Registered configuration config for auto-sync function
-[16nov.2025 10:32:07.399] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.6, for MC 1.20.1 with MCP 20230612.114412
-[16nov.2025 10:32:07.399] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.6 Initialized
-[16nov.2025 10:32:07.525] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source cmmeadditions
-[16nov.2025 10:32:07.527] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source ldlib
-[16nov.2025 10:32:07.532] [modloading-worker-0/INFO] [KubeJS/]: Done in 367.2 ms
-[16nov.2025 10:32:07.538] [modloading-worker-0/WARN] [Configuration/IO]: Correcting config value 'replaceWithCobbleVersion' from 'null' to 'true'
-[16nov.2025 10:32:07.539] [modloading-worker-0/WARN] [Configuration/IO]: Correcting config value 'createCompat' from 'null' to 'true'
-[16nov.2025 10:32:07.543] [modloading-worker-0/INFO] [Configuration/FileWatching]: Registered gtceu config for auto-sync function
-[16nov.2025 10:32:07.562] [modloading-worker-0/INFO] [GregTechCEu/]: High-Tier is Enabled.
-[16nov.2025 10:32:07.621] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[16nov.2025 10:32:07.625] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.591 ms
-[16nov.2025 10:32:07.648] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id architectury:sync_ids
-[16nov.2025 10:32:07.649] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
-[16nov.2025 10:32:07.983] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading Rhino Minecraft remapper...
-[16nov.2025 10:32:07.986] [modloading-worker-0/INFO] [dev.latvian.mods.rhino.mod.util.RhinoProperties/]: Rhino properties loaded.
-[16nov.2025 10:32:07.992] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading mappings for 1.20.1
-[16nov.2025 10:32:08.099] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Done in 0,116 s
-[16nov.2025 10:32:08.423] [modloading-worker-0/WARN] [mixin/]: Error loading class: org/embeddedt/modernfix/api/entrypoint/ModernFixClientIntegration (java.lang.ClassNotFoundException: org.embeddedt.modernfix.api.entrypoint.ModernFixClientIntegration)
-[16nov.2025 10:32:09.027] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:CmmePluginTest.js in 0.064 s
-[16nov.2025 10:32:09.027] [modloading-worker-0/INFO] [KubeJS Startup/]: example.js#5: Hello, World! (Loaded startup scripts)
-[16nov.2025 10:32:09.029] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:example.js in 0.001 s
-[16nov.2025 10:32:09.031] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded 2/2 KubeJS startup scripts in 0.929 s with 0 errors and 0 warnings
-[16nov.2025 10:32:09.112] [modloading-worker-0/INFO] [KubeJS Client/]: example.js#5: Hello, World! (Loaded client scripts)
-[16nov.2025 10:32:09.113] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded script client_scripts:example.js in 0.0 s
-[16nov.2025 10:32:09.113] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded 1/1 KubeJS client scripts in 0.028 s with 0 errors and 0 warnings
-[16nov.2025 10:32:09.140] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:send_data_from_client
-[16nov.2025 10:32:09.142] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:send_data_from_server
-[16nov.2025 10:32:09.143] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:paint
-[16nov.2025 10:32:09.143] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:add_stage
-[16nov.2025 10:32:09.144] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:remove_stage
-[16nov.2025 10:32:09.145] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:sync_stages
-[16nov.2025 10:32:09.145] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:first_click
-[16nov.2025 10:32:09.146] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:toast
-[16nov.2025 10:32:09.147] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:reload_startup_scripts
-[16nov.2025 10:32:09.148] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_server_errors
-[16nov.2025 10:32:09.148] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_client_errors
-[16nov.2025 10:32:09.160] [Render thread/INFO] [GregTechCEu/]: GTCEu common proxy init!
-[16nov.2025 10:32:09.231] [Render thread/INFO] [GregTechCEu/]: Registering material registries
-[16nov.2025 10:32:09.232] [Render thread/INFO] [GregTechCEu/]: Registering GTCEu Materials
-[16nov.2025 10:32:09.367] [Render thread/INFO] [GregTechCEu/]: Registering addon Materials
-[16nov.2025 10:32:10.731] [Render thread/WARN] [GregTechCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:lava
-[16nov.2025 10:32:10.747] [Render thread/WARN] [GregTechCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:milk
-[16nov.2025 10:32:10.788] [Render thread/WARN] [GregTechCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:water
-[16nov.2025 10:32:12.739] [Render thread/INFO] [GregTechCEu/]: Registering KeyBinds
-[16nov.2025 10:32:12.757] [Render thread/WARN] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Mod 'gtceu' took 3.597 s to run a deferred task.
-[16nov.2025 10:32:12.815] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sound_event registry
-[16nov.2025 10:32:12.827] [Render thread/INFO] [KubeJS/]: Skipping minecraft:fluid registry
-[16nov.2025 10:32:13.083] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block registry
-[16nov.2025 10:32:13.672] [Render thread/INFO] [KubeJS/]: Skipping minecraft:attribute registry
-[16nov.2025 10:32:13.682] [Render thread/INFO] [KubeJS/]: Skipping minecraft:mob_effect registry
-[16nov.2025 10:32:13.688] [Render thread/INFO] [KubeJS/]: Skipping minecraft:particle_type registry
-[16nov.2025 10:32:13.705] [Render thread/INFO] [KubeJS/]: Skipping minecraft:item registry
-[16nov.2025 10:32:14.249] [Render thread/INFO] [KubeJS/]: Skipping minecraft:entity_type registry
-[16nov.2025 10:32:14.255] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sensor_type registry
-[16nov.2025 10:32:14.260] [Render thread/INFO] [KubeJS/]: Skipping minecraft:memory_module_type registry
-[16nov.2025 10:32:14.265] [Render thread/INFO] [KubeJS/]: Skipping minecraft:potion registry
-[16nov.2025 10:32:14.270] [Render thread/INFO] [KubeJS/]: Skipping minecraft:game_event registry
-[16nov.2025 10:32:14.273] [Render thread/INFO] [KubeJS/]: Skipping minecraft:enchantment registry
-[16nov.2025 10:32:14.277] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_entity_type registry
-[16nov.2025 10:32:14.323] [Render thread/INFO] [KubeJS/]: Skipping minecraft:painting_variant registry
-[16nov.2025 10:32:14.326] [Render thread/INFO] [KubeJS/]: Skipping minecraft:stat_type registry
-[16nov.2025 10:32:14.330] [Render thread/INFO] [KubeJS/]: Skipping minecraft:custom_stat registry
-[16nov.2025 10:32:14.340] [Render thread/INFO] [KubeJS/]: Skipping minecraft:chunk_status registry
-[16nov.2025 10:32:14.354] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_test registry
-[16nov.2025 10:32:14.359] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_block_entity_modifier registry
-[16nov.2025 10:32:14.363] [Render thread/INFO] [KubeJS/]: Skipping minecraft:pos_rule_test registry
-[16nov.2025 10:32:14.368] [Render thread/INFO] [KubeJS/]: Skipping minecraft:menu registry
-[16nov.2025 10:32:14.371] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_type registry
-[16nov.2025 10:32:14.374] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_serializer registry
-[16nov.2025 10:32:14.438] [Render thread/INFO] [KubeJS/]: Skipping minecraft:position_source_type registry
-[16nov.2025 10:32:14.446] [Render thread/INFO] [KubeJS/]: Skipping minecraft:command_argument_type registry
-[16nov.2025 10:32:14.457] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_type registry
-[16nov.2025 10:32:14.462] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_profession registry
-[16nov.2025 10:32:14.467] [Render thread/INFO] [KubeJS/]: Skipping minecraft:point_of_interest_type registry
-[16nov.2025 10:32:14.472] [Render thread/INFO] [KubeJS/]: Skipping minecraft:schedule registry
-[16nov.2025 10:32:14.479] [Render thread/INFO] [KubeJS/]: Skipping minecraft:activity registry
-[16nov.2025 10:32:14.487] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_pool_entry_type registry
-[16nov.2025 10:32:14.498] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_function_type registry
-[16nov.2025 10:32:14.507] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_condition_type registry
-[16nov.2025 10:32:14.514] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_number_provider_type registry
-[16nov.2025 10:32:14.517] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_nbt_provider_type registry
-[16nov.2025 10:32:14.520] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_score_provider_type registry
-[16nov.2025 10:32:14.523] [Render thread/INFO] [KubeJS/]: Skipping minecraft:float_provider_type registry
-[16nov.2025 10:32:14.526] [Render thread/INFO] [KubeJS/]: Skipping minecraft:int_provider_type registry
-[16nov.2025 10:32:14.529] [Render thread/INFO] [KubeJS/]: Skipping minecraft:height_provider_type registry
-[16nov.2025 10:32:14.532] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_predicate_type registry
-[16nov.2025 10:32:14.535] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/carver registry
-[16nov.2025 10:32:14.540] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature registry
-[16nov.2025 10:32:14.547] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_processor registry
-[16nov.2025 10:32:14.551] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_placement registry
-[16nov.2025 10:32:14.555] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_piece registry
-[16nov.2025 10:32:14.559] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_type registry
-[16nov.2025 10:32:14.563] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/placement_modifier_type registry
-[16nov.2025 10:32:14.567] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/block_state_provider_type registry
-[16nov.2025 10:32:14.571] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/foliage_placer_type registry
-[16nov.2025 10:32:14.575] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/trunk_placer_type registry
-[16nov.2025 10:32:14.578] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/root_placer_type registry
-[16nov.2025 10:32:14.582] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/tree_decorator_type registry
-[16nov.2025 10:32:14.585] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature_size_type registry
-[16nov.2025 10:32:14.589] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome_source registry
-[16nov.2025 10:32:14.594] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/chunk_generator registry
-[16nov.2025 10:32:14.599] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_condition registry
-[16nov.2025 10:32:14.603] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_rule registry
-[16nov.2025 10:32:14.611] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/density_function_type registry
-[16nov.2025 10:32:14.616] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_pool_element registry
-[16nov.2025 10:32:14.620] [Render thread/INFO] [KubeJS/]: Skipping minecraft:cat_variant registry
-[16nov.2025 10:32:14.624] [Render thread/INFO] [KubeJS/]: Skipping minecraft:frog_variant registry
-[16nov.2025 10:32:14.628] [Render thread/INFO] [KubeJS/]: Skipping minecraft:banner_pattern registry
-[16nov.2025 10:32:14.633] [Render thread/INFO] [KubeJS/]: Skipping minecraft:instrument registry
-[16nov.2025 10:32:14.639] [Render thread/INFO] [KubeJS/]: Skipping minecraft:decorated_pot_patterns registry
-[16nov.2025 10:32:14.644] [Render thread/INFO] [KubeJS/]: Skipping minecraft:creative_mode_tab registry
-[16nov.2025 10:32:14.653] [Render thread/INFO] [KubeJS/]: Skipping forge:biome_modifier_serializers registry
-[16nov.2025 10:32:14.662] [Render thread/INFO] [KubeJS/]: Skipping forge:display_contexts registry
-[16nov.2025 10:32:14.671] [Render thread/INFO] [KubeJS/]: Skipping forge:entity_data_serializers registry
-[16nov.2025 10:32:14.676] [Render thread/INFO] [KubeJS/]: Skipping forge:fluid_type registry
-[16nov.2025 10:32:14.745] [Render thread/INFO] [KubeJS/]: Skipping forge:global_loot_modifier_serializers registry
-[16nov.2025 10:32:14.751] [Render thread/INFO] [KubeJS/]: Skipping forge:holder_set_type registry
-[16nov.2025 10:32:14.764] [Render thread/INFO] [KubeJS/]: Skipping forge:structure_modifier_serializers registry
-[16nov.2025 10:32:14.772] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome registry
-[16nov.2025 10:32:15.562] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [cmmeadditions]
-[16nov.2025 10:32:16.048] [Render thread/INFO] [KubeJS/]: # Walking namespace 'kubejs'
-[16nov.2025 10:32:16.051] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/block/example_block.png' (247 bytes)
-[16nov.2025 10:32:16.051] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/item/example_item.png' (372 bytes)
-[16nov.2025 10:32:16.051] [Render thread/INFO] [KubeJS/]: Generated CLIENT_RESOURCES data (3 files)
-[16nov.2025 10:32:16.055] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: gtceu:dynamic_assets, vanilla, mod_resources, KubeJS Resource Pack [assets], ldlib
-[16nov.2025 10:32:16.188] [Worker-Main-4/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[16nov.2025 10:32:16.213] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configuration] Starting version check at https://raw.githubusercontent.com/Toma1O6/UpdateSchemas/master/configuration-forge.json
-[16nov.2025 10:32:16.472] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configuration] Found status: OUTDATED Current: 2.2.0 Target: 2.2.1
-[16nov.2025 10:32:16.472] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[16nov.2025 10:32:16.808] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.6 Target: 47.4.10
-[16nov.2025 10:32:16.937] [Render thread/INFO] [GregTechCEu/]: GregTech Model loading took 810ms
-[16nov.2025 10:32:17.007] [Render thread/INFO] [KubeJS Client/]: Client resource reload complete!
-[16nov.2025 10:32:17.323] [Worker-Main-1/INFO] [KubeJS/]: CLIENT SETUP
-[16nov.2025 10:32:22.039] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin
-[16nov.2025 10:32:22.074] [Worker-Main-6/INFO] [KubeJS Startup/]: Capturing errors for startup scripts disabled
-[16nov.2025 10:32:22.086] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.universal.UniversalPlugin
-[16nov.2025 10:32:22.094] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.core.CorePlugin
-[16nov.2025 10:32:22.105] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at com.gregtechceu.gtceu.integration.jade.GTJadePlugin
-[16nov.2025 10:32:23.466] [Render thread/WARN] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Mod 'gtceu' took 1.302 s to run a deferred task.
-[16nov.2025 10:32:24.472] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[16nov.2025 10:32:24.472] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[16nov.2025 10:32:25.104] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Boxe (Realtek(R) Audio)
-[16nov.2025 10:32:25.105] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[16nov.2025 10:32:25.268] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[16nov.2025 10:32:25.448] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[16nov.2025 10:32:25.450] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[16nov.2025 10:32:25.452] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[16nov.2025 10:32:25.456] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[16nov.2025 10:32:25.480] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[16nov.2025 10:32:25.481] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[16nov.2025 10:32:25.482] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[16nov.2025 10:32:25.483] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[16nov.2025 10:32:25.979] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[16nov.2025 10:32:26.623] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[16nov.2025 10:32:26.634] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[16nov.2025 10:32:26.636] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[16nov.2025 10:32:26.648] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[16nov.2025 10:32:27.093] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
-[16nov.2025 10:33:21.355] [Render thread/INFO] [GregTechCEu/]: Registering dungeon loot...
-[16nov.2025 10:33:21.362] [Render thread/INFO] [GregTechCEu/]: GregTech Data loading took 6373ms
-[16nov.2025 10:33:21.394] [Render thread/WARN] [net.minecraftforge.common.ForgeHooks/WP]: The following mods have version differences that were not resolved:
-cmmeadditions (version 0.2.1 -> 0.2.2)
-gtceu (version 7.2.0 -> 7.3.0)
-jei (version 15.20.0.105 -> 15.20.0.115)
-Things may not work well.
-[16nov.2025 10:33:21.435] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[16nov.2025 10:33:23.107] [Render thread/INFO] [KubeJS/]: Generated SERVER_DATA data (1 files)
-[16nov.2025 10:33:23.118] [Render thread/INFO] [KubeJS Server/]: Capturing errors for server scripts enabled
-[16nov.2025 10:33:23.143] [Render thread/INFO] [KubeJS Server/]: example.js#5: Hello, World! (Loaded server scripts)
-[16nov.2025 10:33:23.144] [Render thread/INFO] [KubeJS Server/]: Loaded script server_scripts:example.js in 0.001 s
-[16nov.2025 10:33:23.144] [Render thread/INFO] [KubeJS Server/]: Loaded 1/1 KubeJS server scripts in 0.024 s with 0 errors and 0 warnings
-[16nov.2025 10:33:23.145] [Render thread/INFO] [KubeJS Server/]: Scripts loaded
-[16nov.2025 10:33:27.882] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 63 recipes
-[16nov.2025 10:33:28.465] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[16nov.2025 10:33:29.350] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[16nov.2025 10:33:29.350] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[16nov.2025 10:33:32.060] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[16nov.2025 10:33:32.065] [Server thread/INFO] [KubeJS Server/]: Capturing errors for server scripts disabled
-[16nov.2025 10:33:32.066] [Server thread/INFO] [KubeJS Server/]: Server resource reload complete!
-[16nov.2025 10:33:35.351] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:35.351] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:35.351] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:35.351] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:35.351] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:35.351] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:35.351] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:35.580] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[16nov.2025 10:33:36.077] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 28%
-[16nov.2025 10:33:36.579] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 90%
-[16nov.2025 10:33:36.620] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[16nov.2025 10:33:36.633] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4567 ms
-[16nov.2025 10:33:36.867] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[16nov.2025 10:33:36.874] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[16nov.2025 10:33:36.998] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[16nov.2025 10:33:37.625] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[16nov.2025 10:33:37.700] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:718c732b] logged in with entity id 148 at (-147.194329650833, 72.1181851402697, -179.01795518260232)
-[16nov.2025 10:33:37.931] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingIn
-[16nov.2025 10:33:37.931] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from DISABLED to ENABLED
-[16nov.2025 10:33:37.934] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[16nov.2025 10:33:38.087] [Server thread/INFO] [Jade/]: Syncing config to Dev (380df991-f603-344c-a090-369bad2a924a)
-[16nov.2025 10:33:39.952] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.RecipesUpdatedEvent
-[16nov.2025 10:33:39.996] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.event.TagsUpdatedEvent
-[16nov.2025 10:33:39.996] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from ENABLED to JEI_STARTED
-[16nov.2025 10:33:39.998] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[16nov.2025 10:33:40.005] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[16nov.2025 10:33:40.009] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 3.836 ms
-[16nov.2025 10:33:40.010] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[16nov.2025 10:33:40.013] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 3.146 ms
-[16nov.2025 10:33:40.016] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[16nov.2025 10:33:40.093] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
-[16nov.2025 10:33:40.093] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. KubeJS
-[16nov.2025 10:33:40.171] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 224 duplicate items were found in 'GregTechCEu Decoration Blocks' creative tab's: displayItems
-This may indicate that these types of item need a subtype interpreter added to JEI:
-[brown_borderless_lamp, black_borderless_lamp, lime_lamp, brown_lamp, black_lamp, pink_borderless_lamp, green_lamp, red_lamp, gray_borderless_lamp, yellow_borderless_lamp, light_blue_lamp, magenta_borderless_lamp, yellow_lamp, purple_borderless_lamp, light_blue_borderless_lamp, blue_borderless_lamp, cyan_lamp, cyan_borderless_lamp, pink_lamp, orange_lamp, light_gray_borderless_lamp, lime_borderless_lamp, magenta_lamp, purple_lamp, orange_borderless_lamp, gray_lamp, green_borderless_lamp, red_borderless_lamp, white_lamp, light_gray_lamp, blue_lamp, white_borderless_lamp]
-[16nov.2025 10:33:40.226] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: 51 duplicate items were found in 'GregTechCEu Items' creative tab's: displayItems
-This may indicate that these types of item need a subtype interpreter added to JEI:
-[nanomuscle_chestplate, electric_jetpack, energy_cluster, hv_item_magnet, portable_debug_scanner, mv_cadmium_battery, facade_cover, lv_cadmium_battery, quarktech_leggings, iv_power_unit, nightvision_goggles, energy_module, ev_power_unit, hv_power_unit, luv_vanadium_battery, hv_sodium_battery, lv_item_magnet, prospector.luv, prospector.lv, hv_lithium_battery, iv_vanadium_battery, zero_point_module, lapotron_crystal, quarktech_boots, advanced_nanomuscle_chestplate, quarktech_chestplate, mv_sodium_battery, hv_cadmium_battery, max_battery, mv_power_unit, lv_sodium_battery, prospector.hv, ev_vanadium_battery, nanomuscle_helmet, nanomuscle_leggings, nano_saber, advanced_electric_jetpack, energy_crystal, tantalum_capacitor, lapotronic_energy_orb, zpm_naquadria_battery, mv_lithium_battery, lv_power_unit, portable_scanner, lv_lithium_battery, advanced_quarktech_chestplate, quarktech_helmet, lapotronic_energy_orb_cluster, nanomuscle_boots, uv_naquadria_battery]
-[16nov.2025 10:33:40.280] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 263.4 milliseconds
-[16nov.2025 10:33:40.280] [Render thread/INFO] [GregTechCEu/]: JEI register ingredients
-[16nov.2025 10:33:40.280] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 264.4 ms
-[16nov.2025 10:33:40.281] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
-[16nov.2025 10:33:40.283] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 1.105 ms
-[16nov.2025 10:33:40.283] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
-[16nov.2025 10:33:40.284] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 1.080 ms
-[16nov.2025 10:33:40.325] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[16nov.2025 10:33:40.356] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 30.83 milliseconds
-[16nov.2025 10:33:40.368] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: ldlib:jei_plugin took 11.18 milliseconds
-[16nov.2025 10:33:40.369] [Render thread/INFO] [GregTechCEu/]: JEI register categories
-[16nov.2025 10:33:40.534] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: gtceu:jei_plugin took 164.7 milliseconds
-[16nov.2025 10:33:40.552] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:internal took 18.22 milliseconds
-[16nov.2025 10:33:40.553] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 227.0 ms
-[16nov.2025 10:33:40.567] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[16nov.2025 10:33:40.572] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 4.531 ms
-[16nov.2025 10:33:40.573] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[16nov.2025 10:33:40.579] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 5.238 ms
-[16nov.2025 10:33:40.579] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[16nov.2025 10:33:40.603] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 23.82 ms
-[16nov.2025 10:33:40.605] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[16nov.2025 10:33:40.605] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 489.8 μs
-[16nov.2025 10:33:40.607] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[16nov.2025 10:33:42.154] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 1.547 seconds
-[16nov.2025 10:33:42.183] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: ldlib:jei_plugin took 29.48 milliseconds
-[16nov.2025 10:33:42.184] [Render thread/INFO] [GregTechCEu/]: JEI register
-[16nov.2025 10:33:47.207] [pool-21-thread-1/ERROR] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: gtceu:jei_plugin is running and has taken 5.023 seconds so far
-[16nov.2025 10:33:49.072] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: gtceu:jei_plugin took 6.889 seconds
-[16nov.2025 10:33:49.389] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 316.0 milliseconds
-[16nov.2025 10:33:49.389] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 8.783 s
-[16nov.2025 10:33:49.406] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[16nov.2025 10:33:49.409] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 3.162 ms
-[16nov.2025 10:33:49.410] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[16nov.2025 10:33:49.415] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[16nov.2025 10:33:49.429] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 13.67 ms
-[16nov.2025 10:33:49.436] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[16nov.2025 10:33:49.439] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[16nov.2025 10:33:49.440] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[16nov.2025 10:33:49.592] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 152.4 ms
-[16nov.2025 10:33:49.592] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[16nov.2025 10:33:49.649] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 11314 ingredients
-[16nov.2025 10:33:51.624] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 11314 ingredients
-[16nov.2025 10:33:51.625] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 2.032 s
-[16nov.2025 10:33:51.748] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:forge_gui took 2.311 seconds
-[16nov.2025 10:33:51.749] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 2.312 s
-[16nov.2025 10:33:51.749] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 2.339 s
-[16nov.2025 10:33:51.749] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[16nov.2025 10:33:51.750] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 567.1 μs
-[16nov.2025 10:33:51.750] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 11.75 s
-[16nov.2025 10:33:51.901] [Render thread/INFO] [Jade/]: Received config from the server: 
-[16nov.2025 10:33:52.452] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 47 advancements
-[16nov.2025 10:33:53.051] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[16nov.2025 10:33:53.091] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[GREGTECH :)]'/minecraft:overworld
-[16nov.2025 10:33:55.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[GREGTECH :)]'/minecraft:the_end
-[16nov.2025 10:33:55.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[GREGTECH :)]'/minecraft:the_nether
-[16nov.2025 10:33:55.622] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2648ms or 52 ticks behind
-[16nov.2025 10:34:27.907] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[16nov.2025 10:34:27.921] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggingOut
-[16nov.2025 10:34:27.921] [Render thread/INFO] [mezz.jei.forge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
-[16nov.2025 10:34:27.921] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
-[16nov.2025 10:34:27.922] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
-[16nov.2025 10:34:27.923] [Render thread/INFO] [mezz.jei.forge.plugins.forge.ForgeGuiPlugin/]: Stopping JEI GUI
-[16nov.2025 10:34:27.924] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 1.582 ms
-[16nov.2025 10:34:27.941] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[16nov.2025 10:34:27.941] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[16nov.2025 10:34:27.957] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[16nov.2025 10:34:28.004] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[16nov.2025 10:34:28.004] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[16nov.2025 10:34:28.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[16nov.2025 10:34:28.983] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[GREGTECH :)]'/minecraft:overworld
-[16nov.2025 10:34:29.400] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[GREGTECH :)]'/minecraft:the_end
-[16nov.2025 10:34:29.402] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[GREGTECH :)]'/minecraft:the_nether
-[16nov.2025 10:34:29.474] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (GREGTECH _)): All chunks are saved
-[16nov.2025 10:34:29.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[16nov.2025 10:34:29.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[16nov.2025 10:34:29.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[26nov.2025 15:46:51.127] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\elise\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.6, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, cmmeadditions.mixins.json]
+[26nov.2025 15:46:51.132] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[26nov.2025 15:46:51.274] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[26nov.2025 15:46:51.366] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[26nov.2025 15:46:51.932] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[26nov.2025 15:46:52.100] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/elise/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[26nov.2025 15:46:52.332] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce GTX 1650/PCIe/SSE2 GL version 4.6.0 NVIDIA 581.80, NVIDIA Corporation
+[26nov.2025 15:46:52.692] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.6\9e86bf67e222253576e982856d9958695725adb5\javafmllanguage-1.20.1-47.4.6.jar is missing mods.toml file
+[26nov.2025 15:46:52.696] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.6\56100545804adc991cc48ab68b86ba46c5873246\lowcodelanguage-1.20.1-47.4.6.jar is missing mods.toml file
+[26nov.2025 15:46:52.699] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.6\fd228d7d879a9da774eda022ea3092cedb5178f1\mclanguage-1.20.1-47.4.6.jar is missing mods.toml file
+[26nov.2025 15:46:52.705] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\elise\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.6\cefc55ada370ce2f23f92834530eb967c0de1fdd\fmlcore-1.20.1-47.4.6.jar is missing mods.toml file
+[26nov.2025 15:46:53.150] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[26nov.2025 15:46:55.814] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[26nov.2025 15:46:55.862] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\elise\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[26nov.2025 15:46:55.947] [main/WARN] [mixin/]: Reference map 'cmmeadditions.refmap.json' for cmmeadditions.mixins.json could not be read. If this is a development environment you can ignore this message
+[26nov.2025 15:46:56.461] [main/INFO] [mixin/]: Remapping refMap rhino-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.462] [main/INFO] [mixin/]: Remapping refMap configuration.refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.464] [main/INFO] [mixin/]: Remapping refMap jade.refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.473] [main/INFO] [mixin/]: Remapping refMap architectury-forge-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.475] [main/INFO] [mixin/]: Remapping refMap architectury-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.480] [main/INFO] [mixin/]: Remapping refMap ldlib-common-1.20.1-ldlib-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.483] [main/INFO] [mixin/]: Remapping refMap ldlib-forge-1.20.1-ldlib-forge-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.486] [main/INFO] [mixin/]: Remapping refMap kubejs-forge-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.488] [main/INFO] [mixin/]: Remapping refMap kubejs-common-refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:56.493] [main/INFO] [mixin/]: Remapping refMap gtceu.refmap.json using C:\Users\elise\IdeaProjects\CMME Additions\build\createSrgToMcp\output.srg
+[26nov.2025 15:46:57.600] [main/WARN] [mixin/]: Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)
+[26nov.2025 15:46:57.603] [main/WARN] [mixin/]: Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)
+[26nov.2025 15:46:57.778] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0-rc.3).
+[26nov.2025 15:47:04.301] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 233 milliseconds
+[26nov.2025 15:47:07.975] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/elise/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.6_mapped_official_1.20.1/forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[26nov.2025 15:47:07.975] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/elise/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.6_mapped_official_1.20.1/forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[26nov.2025 15:47:08.006] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[26nov.2025 15:47:08.016] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[26nov.2025 15:47:08.220] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[26nov.2025 15:47:08.275] [Render thread/INFO] [KubeJS/]: Loaded client.properties
+[26nov.2025 15:47:08.614] [modloading-worker-0/INFO] [GregTechCEu/]: GregTechCEu is initializing...
+[26nov.2025 15:47:08.642] [modloading-worker-0/INFO] [LowDragLib/]: LowDragLib is initializing on platform: Forge
+[26nov.2025 15:47:08.744] [modloading-worker-0/INFO] [KubeJS/]: Loaded common.properties
+[26nov.2025 15:47:08.747] [modloading-worker-0/INFO] [KubeJS/]: Loaded dev.properties
+[26nov.2025 15:47:09.153] [modloading-worker-0/INFO] [KubeJS Startup/]: Capturing errors for startup scripts enabled
+[26nov.2025 15:47:09.154] [modloading-worker-0/INFO] [KubeJS/]: Looking for KubeJS plugins...
+[26nov.2025 15:47:09.162] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs
+[26nov.2025 15:47:09.209] [modloading-worker-0/INFO] [Configuration/FileWatching]: Registered configuration config for auto-sync function
+[26nov.2025 15:47:09.216] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping
+[26nov.2025 15:47:09.217] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source gtceu
+[26nov.2025 15:47:09.355] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.6, for MC 1.20.1 with MCP 20230612.114412
+[26nov.2025 15:47:09.355] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.6 Initialized
+[26nov.2025 15:47:09.519] [modloading-worker-0/INFO] [Configuration/FileWatching]: Registered gtceu config for auto-sync function
+[26nov.2025 15:47:09.526] [modloading-worker-0/INFO] [GregTechCEu/]: High-Tier is Enabled.
+[26nov.2025 15:47:09.638] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source cmmeadditions
+[26nov.2025 15:47:09.643] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source ldlib
+[26nov.2025 15:47:09.648] [modloading-worker-0/INFO] [KubeJS/]: Done in 492.0 ms
+[26nov.2025 15:47:09.751] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id architectury:sync_ids
+[26nov.2025 15:47:09.751] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[26nov.2025 15:47:09.760] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[26nov.2025 15:47:09.761] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 8.454 ms
+[26nov.2025 15:47:10.398] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading Rhino Minecraft remapper...
+[26nov.2025 15:47:10.406] [modloading-worker-0/INFO] [dev.latvian.mods.rhino.mod.util.RhinoProperties/]: Rhino properties loaded.
+[26nov.2025 15:47:10.414] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading mappings for 1.20.1
+[26nov.2025 15:47:10.529] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Done in 0,130 s
+[26nov.2025 15:47:11.139] [modloading-worker-0/WARN] [mixin/]: Error loading class: org/embeddedt/modernfix/api/entrypoint/ModernFixClientIntegration (java.lang.ClassNotFoundException: org.embeddedt.modernfix.api.entrypoint.ModernFixClientIntegration)
+[26nov.2025 15:47:11.650] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:CmmePluginTest.js in 0.057 s
+[26nov.2025 15:47:11.650] [modloading-worker-0/INFO] [KubeJS Startup/]: example.js#5: Hello, World! (Loaded startup scripts)
+[26nov.2025 15:47:11.651] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:example.js in 0.001 s
+[26nov.2025 15:47:11.654] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded 2/2 KubeJS startup scripts in 1.122 s with 0 errors and 0 warnings
+[26nov.2025 15:47:11.753] [modloading-worker-0/INFO] [KubeJS Client/]: example.js#5: Hello, World! (Loaded client scripts)
+[26nov.2025 15:47:11.754] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded script client_scripts:example.js in 0.001 s
+[26nov.2025 15:47:11.754] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded 1/1 KubeJS client scripts in 0.03 s with 0 errors and 0 warnings
+[26nov.2025 15:47:11.790] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:send_data_from_client
+[26nov.2025 15:47:11.791] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:send_data_from_server
+[26nov.2025 15:47:11.792] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:paint
+[26nov.2025 15:47:11.793] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:add_stage
+[26nov.2025 15:47:11.794] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:remove_stage
+[26nov.2025 15:47:11.795] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:sync_stages
+[26nov.2025 15:47:11.796] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:first_click
+[26nov.2025 15:47:11.797] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:toast
+[26nov.2025 15:47:11.799] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:reload_startup_scripts
+[26nov.2025 15:47:11.802] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_server_errors
+[26nov.2025 15:47:11.804] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_client_errors
+[26nov.2025 15:47:11.821] [Render thread/INFO] [GregTechCEu/]: GTCEu common proxy init!
+[26nov.2025 15:47:11.934] [Render thread/INFO] [GregTechCEu/]: Registering material registries
+[26nov.2025 15:47:11.936] [Render thread/INFO] [GregTechCEu/]: Registering GTCEu Materials
+[26nov.2025 15:47:12.161] [Render thread/INFO] [GregTechCEu/]: Registering addon Materials
+[26nov.2025 15:47:14.231] [Render thread/WARN] [GregTechCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:water
+[26nov.2025 15:47:14.247] [Render thread/WARN] [GregTechCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:milk
+[26nov.2025 15:47:14.577] [Render thread/WARN] [GregTechCEu/]: FluidStorageKey{gtceu:liquid} already has an associated fluid for material gtceu:lava
+[26nov.2025 15:47:19.248] [Render thread/INFO] [GregTechCEu/]: Registering KeyBinds
+[26nov.2025 15:47:19.280] [Render thread/WARN] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Mod 'gtceu' took 7.460 s to run a deferred task.
+[26nov.2025 15:47:19.503] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sound_event registry
+[26nov.2025 15:47:19.549] [Render thread/INFO] [KubeJS/]: Skipping minecraft:fluid registry
+[26nov.2025 15:47:21.593] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block registry
+[26nov.2025 15:47:23.723] [Render thread/INFO] [KubeJS/]: Skipping minecraft:attribute registry
+[26nov.2025 15:47:23.733] [Render thread/INFO] [KubeJS/]: Skipping minecraft:mob_effect registry
+[26nov.2025 15:47:23.741] [Render thread/INFO] [KubeJS/]: Skipping minecraft:particle_type registry
+[26nov.2025 15:47:23.754] [Render thread/INFO] [KubeJS/]: Skipping minecraft:item registry
+[26nov.2025 15:47:25.412] [Render thread/INFO] [KubeJS/]: Skipping minecraft:entity_type registry
+[26nov.2025 15:47:25.421] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sensor_type registry
+[26nov.2025 15:47:25.429] [Render thread/INFO] [KubeJS/]: Skipping minecraft:memory_module_type registry
+[26nov.2025 15:47:25.437] [Render thread/INFO] [KubeJS/]: Skipping minecraft:potion registry
+[26nov.2025 15:47:25.445] [Render thread/INFO] [KubeJS/]: Skipping minecraft:game_event registry
+[26nov.2025 15:47:25.453] [Render thread/INFO] [KubeJS/]: Skipping minecraft:enchantment registry
+[26nov.2025 15:47:25.463] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_entity_type registry
+[26nov.2025 15:47:25.613] [Render thread/INFO] [KubeJS/]: Skipping minecraft:painting_variant registry
+[26nov.2025 15:47:25.625] [Render thread/INFO] [KubeJS/]: Skipping minecraft:stat_type registry
+[26nov.2025 15:47:25.633] [Render thread/INFO] [KubeJS/]: Skipping minecraft:custom_stat registry
+[26nov.2025 15:47:25.641] [Render thread/INFO] [KubeJS/]: Skipping minecraft:chunk_status registry
+[26nov.2025 15:47:25.652] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_test registry
+[26nov.2025 15:47:25.659] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_block_entity_modifier registry
+[26nov.2025 15:47:25.667] [Render thread/INFO] [KubeJS/]: Skipping minecraft:pos_rule_test registry
+[26nov.2025 15:47:25.678] [Render thread/INFO] [KubeJS/]: Skipping minecraft:menu registry
+[26nov.2025 15:47:25.685] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_type registry
+[26nov.2025 15:47:25.694] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_serializer registry
+[26nov.2025 15:47:25.743] [Render thread/INFO] [KubeJS/]: Skipping minecraft:position_source_type registry
+[26nov.2025 15:47:25.750] [Render thread/INFO] [KubeJS/]: Skipping minecraft:command_argument_type registry
+[26nov.2025 15:47:25.766] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_type registry
+[26nov.2025 15:47:25.773] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_profession registry
+[26nov.2025 15:47:25.781] [Render thread/INFO] [KubeJS/]: Skipping minecraft:point_of_interest_type registry
+[26nov.2025 15:47:25.788] [Render thread/INFO] [KubeJS/]: Skipping minecraft:schedule registry
+[26nov.2025 15:47:25.795] [Render thread/INFO] [KubeJS/]: Skipping minecraft:activity registry
+[26nov.2025 15:47:25.802] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_pool_entry_type registry
+[26nov.2025 15:47:25.810] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_function_type registry
+[26nov.2025 15:47:25.825] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_condition_type registry
+[26nov.2025 15:47:25.839] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_number_provider_type registry
+[26nov.2025 15:47:25.846] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_nbt_provider_type registry
+[26nov.2025 15:47:25.854] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_score_provider_type registry
+[26nov.2025 15:47:25.863] [Render thread/INFO] [KubeJS/]: Skipping minecraft:float_provider_type registry
+[26nov.2025 15:47:25.872] [Render thread/INFO] [KubeJS/]: Skipping minecraft:int_provider_type registry
+[26nov.2025 15:47:25.880] [Render thread/INFO] [KubeJS/]: Skipping minecraft:height_provider_type registry
+[26nov.2025 15:47:25.887] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_predicate_type registry
+[26nov.2025 15:47:25.894] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/carver registry
+[26nov.2025 15:47:25.901] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature registry
+[26nov.2025 15:47:25.912] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_processor registry
+[26nov.2025 15:47:25.917] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_placement registry
+[26nov.2025 15:47:25.923] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_piece registry
+[26nov.2025 15:47:25.928] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_type registry
+[26nov.2025 15:47:25.934] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/placement_modifier_type registry
+[26nov.2025 15:47:25.940] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/block_state_provider_type registry
+[26nov.2025 15:47:25.947] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/foliage_placer_type registry
+[26nov.2025 15:47:25.953] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/trunk_placer_type registry
+[26nov.2025 15:47:25.957] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/root_placer_type registry
+[26nov.2025 15:47:25.962] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/tree_decorator_type registry
+[26nov.2025 15:47:25.968] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature_size_type registry
+[26nov.2025 15:47:25.974] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome_source registry
+[26nov.2025 15:47:25.981] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/chunk_generator registry
+[26nov.2025 15:47:25.989] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_condition registry
+[26nov.2025 15:47:25.996] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_rule registry
+[26nov.2025 15:47:26.002] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/density_function_type registry
+[26nov.2025 15:47:26.009] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_pool_element registry
+[26nov.2025 15:47:26.016] [Render thread/INFO] [KubeJS/]: Skipping minecraft:cat_variant registry
+[26nov.2025 15:47:26.023] [Render thread/INFO] [KubeJS/]: Skipping minecraft:frog_variant registry
+[26nov.2025 15:47:26.029] [Render thread/INFO] [KubeJS/]: Skipping minecraft:banner_pattern registry
+[26nov.2025 15:47:26.036] [Render thread/INFO] [KubeJS/]: Skipping minecraft:instrument registry
+[26nov.2025 15:47:26.042] [Render thread/INFO] [KubeJS/]: Skipping minecraft:decorated_pot_patterns registry
+[26nov.2025 15:47:26.050] [Render thread/INFO] [KubeJS/]: Skipping minecraft:creative_mode_tab registry
+[26nov.2025 15:47:26.065] [Render thread/INFO] [KubeJS/]: Skipping forge:biome_modifier_serializers registry
+[26nov.2025 15:47:26.085] [Render thread/INFO] [KubeJS/]: Skipping forge:display_contexts registry
+[26nov.2025 15:47:26.093] [Render thread/INFO] [KubeJS/]: Skipping forge:entity_data_serializers registry
+[26nov.2025 15:47:26.099] [Render thread/INFO] [KubeJS/]: Skipping forge:fluid_type registry
+[26nov.2025 15:47:26.165] [Render thread/INFO] [KubeJS/]: Skipping forge:global_loot_modifier_serializers registry
+[26nov.2025 15:47:26.172] [Render thread/INFO] [KubeJS/]: Skipping forge:holder_set_type registry
+[26nov.2025 15:47:26.195] [Render thread/INFO] [KubeJS/]: Skipping forge:structure_modifier_serializers registry
+[26nov.2025 15:47:26.203] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome registry
+[26nov.2025 15:47:27.953] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [cmmeadditions]
+[26nov.2025 15:47:29.658] [Render thread/INFO] [KubeJS/]: # Walking namespace 'kubejs'
+[26nov.2025 15:47:29.668] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/block/example_block.png' (247 bytes)
+[26nov.2025 15:47:29.669] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/item/example_item.png' (372 bytes)
+[26nov.2025 15:47:29.669] [Render thread/INFO] [KubeJS/]: Generated CLIENT_RESOURCES data (3 files)
+[26nov.2025 15:47:29.687] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: gtceu:dynamic_assets, vanilla, mod_resources, KubeJS Resource Pack [assets], ldlib
+[26nov.2025 15:47:29.983] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[26nov.2025 15:47:30.087] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configuration] Starting version check at https://raw.githubusercontent.com/Toma1O6/UpdateSchemas/master/configuration-forge.json
+[26nov.2025 15:47:30.577] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configuration] Found status: OUTDATED Current: 2.2.0 Target: 2.2.1
+[26nov.2025 15:47:30.578] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[26nov.2025 15:47:30.955] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.4.6 Target: 47.4.10
+[26nov.2025 15:47:33.559] [Render thread/INFO] [GregTechCEu/]: GregTech Model loading took 3728ms
+[26nov.2025 15:47:33.687] [Render thread/INFO] [KubeJS Client/]: Client resource reload complete!
+[26nov.2025 15:47:35.509] [Worker-Main-3/INFO] [KubeJS/]: CLIENT SETUP
+[26nov.2025 15:47:51.051] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin
+[26nov.2025 15:47:51.253] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.universal.UniversalPlugin
+[26nov.2025 15:47:51.272] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.core.CorePlugin
+[26nov.2025 15:47:51.307] [Worker-Main-3/INFO] [KubeJS Startup/]: Capturing errors for startup scripts disabled
+[26nov.2025 15:47:51.335] [Worker-Main-5/INFO] [Jade/]: Start loading plugin at com.gregtechceu.gtceu.integration.jade.GTJadePlugin
+[26nov.2025 15:47:53.634] [Render thread/WARN] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Mod 'gtceu' took 2.099 s to run a deferred task.
+[26nov.2025 15:47:55.945] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[26nov.2025 15:47:55.945] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[26nov.2025 15:47:56.014] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Boxe (Realtek(R) Audio)
+[26nov.2025 15:47:56.016] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[26nov.2025 15:47:56.300] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[26nov.2025 15:47:56.365] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[26nov.2025 15:47:56.366] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[26nov.2025 15:47:56.368] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[26nov.2025 15:47:56.369] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[26nov.2025 15:47:56.379] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[26nov.2025 15:47:56.381] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[26nov.2025 15:47:56.382] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[26nov.2025 15:47:56.383] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[26nov.2025 15:47:57.301] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[26nov.2025 15:47:58.646] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[26nov.2025 15:47:58.650] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[26nov.2025 15:47:58.651] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[26nov.2025 15:47:58.687] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[26nov.2025 15:47:59.365] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: 0
+[26nov.2025 15:48:20.847] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
