@@ -10,10 +10,10 @@
   "tagprefix.broad_rod": "%s Broad Rod",
   "tagprefix.tube": "%s Tube",
   "tagprefix.singularity": "Singularity %s Ingot",
-  "tagprefix.crushed_ore_block": "Crushed Ore Block of %s",
-  "tagprefix.purified_ore_block": "Purified Ore Block of %s",
-  "tagprefix.refined_ore_block": "Refined Ore Block of %s",
-  "tagprefix.dust_impure_block": "Impure Dust Block of %s",
-  "tagprefix.dust_pure_block": "Purified Dust Block of %s",
-  "tagprefix.dust_block": "Dust Block of %s"
+  "tagprefix.crushed_ore_block": "Block of Crushed %s Ore",
+  "tagprefix.purified_ore_block": "Block of Purified %s Ore",
+  "tagprefix.refined_ore_block": "Block of Refined %s Ore",
+  "tagprefix.dust_impure_block": "Block of Impure %s Dust",
+  "tagprefix.dust_pure_block": "Block of Purified %s Dust",
+  "tagprefix.dust_block": "Block of %s Dust"
 }
