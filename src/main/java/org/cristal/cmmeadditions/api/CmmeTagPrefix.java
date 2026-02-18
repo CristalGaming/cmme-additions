@@ -1,11 +1,20 @@
 package org.cristal.cmmeadditions.api;
 
 import com.gregtechceu.gtceu.api.GTValues;
+import com.gregtechceu.gtceu.api.block.MaterialBlock;
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialIconType;
+import com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey;
 import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
+import com.gregtechceu.gtceu.api.data.tag.TagType;
+import com.gregtechceu.gtceu.api.data.tag.TagUtil;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.SoundType;
 
-import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.Conditions.hasDustProperty;
-import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.Conditions.hasIngotProperty;
+import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.*;
+import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.Conditions.*;
+import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.pipeLargeItem;
+import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.pipeLargeRestrictive;
 import static org.cristal.cmmeadditions.api.CmmeMaterialFlags.*;
 @SuppressWarnings("unused")
 public class CmmeTagPrefix {
@@ -114,6 +123,32 @@ public class CmmeTagPrefix {
             .generateItem(true)
             .generationCondition(hasDustProperty.and(mat -> mat.hasFlag(GENERATE_QUINTUPLE_PLATE)));
 
+    public static final TagPrefix broadRod = new TagPrefix("broadRod")
+            .idPattern("%s_broad_rod")
+            .defaultTagPath("broad_rods/%s")
+            .unformattedTagPath("broad_rods")
+            .langValue("%s Broad Rod Plate")
+            .materialAmount(GTValues.M)
+            .maxStackSize(64)
+            .materialIconType(new MaterialIconType("rodBroad"))
+            .unificationEnabled(true)
+            .enableRecycling()
+            .generateItem(true)
+            .generationCondition(hasDustProperty.and(mat -> mat.hasFlag(GENERATE_BROAD_ROD)));
+
+    public static final TagPrefix tube = new TagPrefix("tube")
+            .idPattern("%s_tube")
+            .defaultTagPath("tubes/%s")
+            .unformattedTagPath("tubes")
+            .langValue("%s Tube")
+            .materialAmount(GTValues.M/2)
+            .maxStackSize(64)
+            .materialIconType(new MaterialIconType("tube"))
+            .unificationEnabled(true)
+            .enableRecycling()
+            .generateItem(true)
+            .generationCondition(hasDustProperty.and(mat -> mat.hasFlag(GENERATE_TUBE)));
+
     public static final TagPrefix singularity = new TagPrefix("singularity")
             .idPattern("%s_singularity")
             .defaultTagPath("singularities/%s")
@@ -124,8 +159,284 @@ public class CmmeTagPrefix {
             .generateItem(true)
             .generationCondition(mat -> mat.hasFlag(GENERATE_SINGULARITY));
 
+    public static final TagPrefix crushedOreBlock = new TagPrefix("crushedOreBlock")
+            .defaultTagPath("storage_blocks/crushed_ores/%s")
+            .unformattedTagPath("storage_blocks/crushed_ores")
+            .unformattedTagPath("storage_blocks")
+            .langValue("Crushed Ore Block of %s")
+            .materialIconType(new MaterialIconType("crushedOreBlock"))
+            .materialAmount(GTValues.M * 9)
+            .miningToolTag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .generateBlock(true)
+            .blockConstructor((properties, prefix, material) -> new MaterialBlock(properties.sound(SoundType.GRAVEL),prefix,material))
+            .generationCondition(hasOreProperty.and(mat -> mat.hasFlag(GENERATE_FULLBLOCK_ORE_PROCESSING)))
+            .unificationEnabled(true);
+    public static final TagPrefix purifiedOreBlock = new TagPrefix("purifiedOreBlock")
+            .defaultTagPath("storage_blocks/purified_ores/%s")
+            .unformattedTagPath("storage_blocks/purified_ores")
+            .unformattedTagPath("storage_blocks")
+            .langValue("Purified Ore Block of %s")
+            .materialIconType(new MaterialIconType("purifiedOreBlock"))
+            .materialAmount(GTValues.M * 9)
+            .miningToolTag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .generateBlock(true)
+            .blockConstructor((properties, prefix, material) -> new MaterialBlock(properties.sound(SoundType.GRAVEL),prefix,material))
+            .generationCondition(hasOreProperty.and(mat -> mat.hasFlag(GENERATE_FULLBLOCK_ORE_PROCESSING)))
+            .unificationEnabled(true);
+    public static final TagPrefix refinedOreBlock = new TagPrefix("refinedOreBlock")
+            .defaultTagPath("storage_blocks/refined_ores/%s")
+            .unformattedTagPath("storage_blocks/refined_ores")
+            .unformattedTagPath("storage_blocks")
+            .langValue("Refined Ore Block of %s")
+            .materialIconType(new MaterialIconType("refinedOreBlock"))
+            .materialAmount(GTValues.M * 9)
+            .miningToolTag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .generateBlock(true)
+            .blockConstructor((properties, prefix, material) -> new MaterialBlock(properties.sound(SoundType.GRAVEL),prefix,material))
+            .generationCondition(hasOreProperty.and(mat -> mat.hasFlag(GENERATE_FULLBLOCK_ORE_PROCESSING)))
+            .unificationEnabled(true);
+    public static final TagPrefix dustImpureBlock = new TagPrefix("dustImpureBlock")
+            .defaultTagPath("storage_blocks/impure_dusts/%s")
+            .unformattedTagPath("storage_blocks/impure_dusts")
+            .unformattedTagPath("storage_blocks")
+            .langValue("Impure Dust Block of %s")
+            .materialIconType(new MaterialIconType("dustImpureBlock"))
+            .materialAmount(GTValues.M * 9)
+            .miningToolTag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .generateBlock(true)
+            .blockConstructor((properties, prefix, material) -> new MaterialBlock(properties.sound(SoundType.SAND),prefix,material))
+            .generationCondition(hasOreProperty.and(mat -> mat.hasFlag(GENERATE_FULLBLOCK_ORE_PROCESSING)))
+            .unificationEnabled(true);
+    public static final TagPrefix dustPureBlock = new TagPrefix("dustPureBlock")
+            .defaultTagPath("storage_blocks/pure_dusts/%s")
+            .unformattedTagPath("storage_blocks/pure_dusts")
+            .unformattedTagPath("storage_blocks")
+            .langValue("Purified Dust Block of %s")
+            .materialIconType(new MaterialIconType("dustPureBlock"))
+            .materialAmount(GTValues.M * 9)
+            .miningToolTag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .generateBlock(true)
+            .blockConstructor((properties, prefix, material) -> new MaterialBlock(properties.sound(SoundType.SAND),prefix,material))
+            .generationCondition(hasOreProperty.and(mat -> mat.hasFlag(GENERATE_FULLBLOCK_ORE_PROCESSING)))
+            .unificationEnabled(true);
+    public static final TagPrefix dustBlock = new TagPrefix("dustBlock")
+            .defaultTagPath("storage_blocks/dusts/%s")
+            .unformattedTagPath("storage_blocks/dusts")
+            .unformattedTagPath("storage_blocks")
+            .langValue("Dust Block of %s")
+            .materialIconType(new MaterialIconType("dustBlock"))
+            .materialAmount(GTValues.M * 9)
+            .miningToolTag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .generateBlock(true)
+            .blockConstructor((properties, prefix, material) -> new MaterialBlock(properties.sound(SoundType.SAND),prefix,material))
+            .generationCondition(mat ->
+                    mat.hasProperty(PropertyKey.ORE) &&
+                            mat.hasFlag(GENERATE_FULLBLOCK_ORE_PROCESSING) &&
+                            (mat.hasProperty(PropertyKey.INGOT) || mat.hasProperty(PropertyKey.GEM))
+            )
+            .unificationEnabled(true);
+
+    private static void tagAddition(){
+        pipeTinyFluid.customTagPath("pipes/fluid/tiny/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/tiny/"+mat.getName())
+        ).customTagPath("pipes/fluid/tiny",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/tiny")
+        ).customTagPath("pipes/fluid",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeSmallFluid.customTagPath("pipes/fluid/small/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/small/"+mat.getName())
+        ).customTagPath("pipes/fluid/small",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/small")
+        ).customTagPath("pipes/fluid",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeNormalFluid.customTagPath("pipes/fluid/medium/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/medium/"+mat.getName())
+        ).customTagPath("pipes/fluid/medium",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/medium")
+        ).customTagPath("pipes/fluid",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeLargeFluid.customTagPath("pipes/fluid/large/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/large/"+mat.getName())
+        ).customTagPath("pipes/fluid/large",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/large")
+        ).customTagPath("pipes/fluid",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeHugeFluid.customTagPath("pipes/fluid/huge/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/huge/"+mat.getName())
+        ).customTagPath("pipes/fluid/huge",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid/huge")
+        ).customTagPath("pipes/fluid",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/fluid")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+
+        // ===== //
+
+        pipeSmallItem.customTagPath("pipes/item/small/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/small/"+mat.getName())
+        ).customTagPath("pipes/item/small",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/small")
+        ).customTagPath("pipes/item",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeNormalItem.customTagPath("pipes/item/medium/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/medium/"+mat.getName())
+        ).customTagPath("pipes/item/medium",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/medium")
+        ).customTagPath("pipes/item",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeLargeItem.customTagPath("pipes/item/large/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/large/"+mat.getName())
+        ).customTagPath("pipes/item/large",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/large")
+        ).customTagPath("pipes/item",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeHugeItem.customTagPath("pipes/item/huge/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/huge/"+mat.getName())
+        ).customTagPath("pipes/item/huge",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item/huge")
+        ).customTagPath("pipes/item",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/item")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+
+        // ===== //
+
+        pipeSmallRestrictive.customTagPath("pipes/restrictive/small/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/small/"+mat.getName())
+        ).customTagPath("pipes/restrictive/small",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/small")
+        ).customTagPath("pipes/restrictive",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeNormalRestrictive.customTagPath("pipes/restrictive/medium/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/medium/"+mat.getName())
+        ).customTagPath("pipes/restrictive/medium",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/medium")
+        ).customTagPath("pipes/restrictive",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeLargeRestrictive.customTagPath("pipes/restrictive/large/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/large/"+mat.getName())
+        ).customTagPath("pipes/restrictive/large",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/large")
+        ).customTagPath("pipes/restrictive",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+        pipeHugeRestrictive.customTagPath("pipes/restrictive/huge/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/huge/"+mat.getName())
+        ).customTagPath("pipes/restrictive/huge",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive/huge")
+        ).customTagPath("pipes/restrictive",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes/restrictive")
+        ).customTagPath("pipes",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"pipes")
+        );
+
+        // ===== //
+
+        wireGtHex.customTagPath("wires/hex/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex/"+mat.getName())
+        ).customTagPath("wires/hex",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+        ).customTagPath("wires",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
+        );
+        wireGtOctal.customTagPath("wires/octal/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/octal/"+mat.getName())
+        ).customTagPath("wires/octal",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+        ).customTagPath("wires",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
+        );
+        wireGtQuadruple.customTagPath("wires/quadruple/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/quadruple/"+mat.getName())
+        ).customTagPath("wires/quadruple",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+        ).customTagPath("wires",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
+        );
+        wireGtDouble.customTagPath("wires/double/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/double/"+mat.getName())
+        ).customTagPath("wires/double",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+        ).customTagPath("wires",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
+        );
+        wireGtSingle.customTagPath("wires/single/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/single/"+mat.getName())
+        ).customTagPath("wires/single",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+        ).customTagPath("wires",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
+        );
+        cableGtHex.customTagPath("cables/hex/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/hex/"+mat.getName())
+        ).customTagPath("cables/hex",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+        ).customTagPath("cables",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
+        );
+        cableGtOctal.customTagPath("cables/octal/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/octal/"+mat.getName())
+        ).customTagPath("cables/octal",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/octal")
+        ).customTagPath("cables",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
+        );
+        cableGtQuadruple.customTagPath("cables/quadruple/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/quadruple/"+mat.getName())
+        ).customTagPath("cables/quadruple",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/quadruple")
+        ).customTagPath("cables",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables")
+        );
+        cableGtDouble.customTagPath("cables/double/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/double/"+mat.getName())
+        ).customTagPath("cables/double",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/double")
+        ).customTagPath("cables",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables")
+        );
+        cableGtSingle.customTagPath("cables/single/%s",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/single/"+mat.getName())
+        ).customTagPath("cables/single",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables/single")
+        ).customTagPath("cables",(prefix, mat) ->
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"cables")
+        );
+    }
 
     public static void register(){
         new CmmeTagPrefix();
+        tagAddition();
     }
 }

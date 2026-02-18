@@ -20,6 +20,9 @@ public class CmmeMaterials extends Material {
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
                 GENERATE_SUPERDENSE,
+                GENERATE_BROAD_ROD,
+                GENERATE_TUBE,
+                GENERATE_FULLBLOCK_ORE_PROCESSING,
                 GENERATE_SINGULARITY
         );
         GTMaterials.Aluminium.addFlags(
@@ -31,6 +34,9 @@ public class CmmeMaterials extends Material {
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
                 GENERATE_SUPERDENSE,
+                GENERATE_BROAD_ROD,
+                GENERATE_TUBE,
+                GENERATE_FULLBLOCK_ORE_PROCESSING,
                 GENERATE_SINGULARITY
         );
         GTMaterials.Steel.addFlags(
@@ -42,6 +48,8 @@ public class CmmeMaterials extends Material {
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
                 GENERATE_SUPERDENSE,
+                GENERATE_BROAD_ROD,
+                GENERATE_TUBE,
                 GENERATE_SINGULARITY
         );
         GTMaterials.Silver.addFlags(
@@ -53,6 +61,9 @@ public class CmmeMaterials extends Material {
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
                 GENERATE_SUPERDENSE,
+                GENERATE_BROAD_ROD,
+                GENERATE_TUBE,
+                GENERATE_FULLBLOCK_ORE_PROCESSING,
                 GENERATE_SINGULARITY
         );
         GTMaterials.Diamond.addFlags(
@@ -60,7 +71,11 @@ public class CmmeMaterials extends Material {
                 GENERATE_TRIPLE_PLATE,
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
-                GENERATE_SUPERDENSE
+                GENERATE_SUPERDENSE,
+                GENERATE_BROAD_ROD,
+                GENERATE_TUBE,
+                GENERATE_FULLBLOCK_ORE_PROCESSING,
+                GENERATE_SINGULARITY
         );
     }
 }

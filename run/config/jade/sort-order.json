@@ -65,6 +65,8 @@
   "gtceu:custom_fluid_storage": null,
   "gtceu:fluid_storage": null,
   "gtceu:data_bank": null,
+  "gtceu:battery_info": null,
+  "gtceu:ldp_endpoint": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
   "minecraft:command_block": null,
@@ -128,6 +130,8 @@
   "gtceu:primitive_pump": null,
   "gtceu:data_bank": null,
   "gtceu:energy_converter_provider": null,
+  "gtceu:battery_info": null,
+  "gtceu:ldp_endpoint": null,
   "gtceu:custom_item_storage": null,
   "gtceu:custom_fluid_storage": null,
   "gtceu:fluid_storage": null

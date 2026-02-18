@@ -1,10 +1,10 @@
 package org.cristal.cmmeadditions.api;
 
 import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlag;
-import com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags;
 import com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey;
 
 import static com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags.GENERATE_PLATE;
+import static com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags.GENERATE_ROD;
 
 public class CmmeMaterialFlags {
 
@@ -52,7 +52,21 @@ public class CmmeMaterialFlags {
             .requireProps(PropertyKey.DUST)
             .build();
 
+    public static final MaterialFlag GENERATE_BROAD_ROD = new MaterialFlag.Builder("generate_broad_rod")
+            .requireFlags(GENERATE_ROD)
+            .requireProps(PropertyKey.DUST)
+            .build();
+
+    public static final MaterialFlag GENERATE_TUBE = new MaterialFlag.Builder("generate_tube")
+            .requireProps(PropertyKey.DUST)
+            .build();
+
+
     public static final MaterialFlag GENERATE_SINGULARITY = new MaterialFlag.Builder("generate_singularity")
+            .build();
+
+    public static final MaterialFlag GENERATE_FULLBLOCK_ORE_PROCESSING = new MaterialFlag.Builder("generate_crushed_ore_block")
+            .requireProps(PropertyKey.ORE)
             .build();
 
     public static void register(){

@@ -7,5 +7,13 @@
   "tagprefix.quadruple_plate": "Quadruple %s Plate",
   "tagprefix.quintuple_plate": "Quintuple %s Plate",
   "tagprefix.superdense_plate": "Superdense %s Plate",
-  "tagprefix.singularity": "Singularity %s Ingot"
+  "tagprefix.broad_rod": "%s Broad Rod",
+  "tagprefix.tube": "%s Tube",
+  "tagprefix.singularity": "Singularity %s Ingot",
+  "tagprefix.crushed_ore_block": "Crushed Ore Block of %s",
+  "tagprefix.purified_ore_block": "Purified Ore Block of %s",
+  "tagprefix.refined_ore_block": "Refined Ore Block of %s",
+  "tagprefix.dust_impure_block": "Impure Dust Block of %s",
+  "tagprefix.dust_pure_block": "Purified Dust Block of %s",
+  "tagprefix.dust_block": "Dust Block of %s"
 }
