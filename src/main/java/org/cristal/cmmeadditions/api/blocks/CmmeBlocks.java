@@ -54,8 +54,6 @@ public class CmmeBlocks {
     @SuppressWarnings("removal")
     private static void registerCrystals(Material material, GTRegistrate registrate) {
 
-        //Budding budding = new Budding(cluster,budLarge,budMedium,budSmall,BlockBehaviour.Properties.copy(BUDDING_AMETHYST),material);
-
         var clusterEntry = registrate
                 .block("%s_cluster".formatted(material.getName()),
                         p->new Cluster(7,3,p,material,CmmeTagPrefix.cluster))

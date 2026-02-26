@@ -19,7 +19,7 @@ public class GTBlocksMixin {
             require = 1
     )
     private static void cmmeGenerate$init(CallbackInfo ci) {
-        //CmmeBlocks.generateCrystals();
+        CmmeBlocks.generateCrystals();
     }
 
     @Inject(
@@ -29,8 +29,8 @@ public class GTBlocksMixin {
             require = 1
     )
     private static void cmmeSetNull$init(CallbackInfo ci){
-        //CmmeBlocks.CLUSTER_BLOCKS = null;
-        //CmmeBlocks.BUD_BLOCKS = null;
+        CmmeBlocks.CLUSTER_BLOCKS = null;
+        CmmeBlocks.BUD_BLOCKS = null;
     }
 
 }

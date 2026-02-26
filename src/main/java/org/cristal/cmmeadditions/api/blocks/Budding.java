@@ -23,6 +23,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class Budding extends Block{
 
     private final Material material;
+    public final TagPrefix tagPrefix;
 
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
@@ -43,6 +44,7 @@ public class Budding extends Block{
         super(properties);
 
         this.material = material;
+        this.tagPrefix = tagPrefix;
 
         this.cluster = cluster;
         this.budLarge = budLarge;
@@ -50,7 +52,7 @@ public class Budding extends Block{
         this.budSmall = budSmall;
 
         if(GTCEu.isClientSide()){
-            MaterialBlockRenderer.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
+            //MaterialBlockRenderer.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
         }
     }
 

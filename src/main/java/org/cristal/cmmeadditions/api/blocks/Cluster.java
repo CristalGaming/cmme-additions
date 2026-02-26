@@ -60,6 +60,7 @@ public class Cluster extends Block implements SimpleWaterloggedBlock {
 
         if(GTCEu.isClientSide()){
             //ClusterRender.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
+            //MaterialBlockRenderer.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
         }
     }
     

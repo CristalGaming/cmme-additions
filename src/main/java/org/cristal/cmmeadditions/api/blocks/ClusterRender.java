@@ -42,11 +42,9 @@ public class ClusterRender {
     public static void reinitModels() {
         for (ClusterRender model : MODELS) {
             ResourceLocation blockId = BuiltInRegistries.BLOCK.getKey(model.block);
-            ResourceLocation modelId = blockId.withPrefix(
-                    String.format("block/material_sets/%s/%s.json", model.iconSet.name, model.type.name())
-            );
+            ResourceLocation modelId = blockId.withPrefix("block/");
 
-            GTDynamicResourcePack.addBlockModel(modelId, new DelegatedModel( getBlockModelPath(model.iconSet,model.type) ));
+            //GTDynamicResourcePack.addBlockModel(modelId, new DelegatedModel( getBlockModelPath(model.iconSet,model.type) ));
 
             GTDynamicResourcePack.addBlockState(blockId, MultiVariantGenerator
                     .multiVariant(model.block, Variant.variant().with(VariantProperties.MODEL, modelId))

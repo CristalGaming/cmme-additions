@@ -249,22 +249,21 @@ public class CmmeTagPrefix {
             .unificationEnabled(true);
 
     //  It is very difficult for me to implement this
-    // I disabled these because they don't have a model
 
     public static final TagPrefix cluster = new TagPrefix("cluster")
-            .generationCondition(mat -> false);
+            .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budLarge = new TagPrefix("budLarge")
-            .generationCondition(mat -> false);
+            .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budMedium = new TagPrefix("budMedium")
-            .generationCondition(mat -> false);
+            .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budSmall = new TagPrefix("budSmall")
-            .generationCondition(mat -> false);
+            .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budding = new TagPrefix("budding")
-            .generationCondition(mat -> false);
+            .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
 
 
