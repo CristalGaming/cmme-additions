@@ -16,6 +16,7 @@ public class CmmeMaterials extends Material {
                 GENERATE_TRIPLE_INGOT,
                 GENERATE_QUADRUPLE_INGOT,
                 GENERATE_QUINTUPLE_INGOT,
+                GENERATE_CURVED_PLATE,
                 GENERATE_TRIPLE_PLATE,
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
@@ -30,6 +31,7 @@ public class CmmeMaterials extends Material {
                 GENERATE_TRIPLE_INGOT,
                 GENERATE_QUADRUPLE_INGOT,
                 GENERATE_QUINTUPLE_INGOT,
+                GENERATE_CURVED_PLATE,
                 GENERATE_TRIPLE_PLATE,
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
@@ -44,6 +46,7 @@ public class CmmeMaterials extends Material {
                 GENERATE_TRIPLE_INGOT,
                 GENERATE_QUADRUPLE_INGOT,
                 GENERATE_QUINTUPLE_INGOT,
+                GENERATE_CURVED_PLATE,
                 GENERATE_TRIPLE_PLATE,
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
@@ -57,6 +60,7 @@ public class CmmeMaterials extends Material {
                 GENERATE_TRIPLE_INGOT,
                 GENERATE_QUADRUPLE_INGOT,
                 GENERATE_QUINTUPLE_INGOT,
+                GENERATE_CURVED_PLATE,
                 GENERATE_TRIPLE_PLATE,
                 GENERATE_QUADRUPLE_PLATE,
                 GENERATE_QUINTUPLE_PLATE,
@@ -67,6 +71,7 @@ public class CmmeMaterials extends Material {
                 GENERATE_SINGULARITY
         );
         GTMaterials.Diamond.addFlags(
+                GENERATE_CURVED_PLATE,
                 GENERATE_DOUBLE_PLATE,
                 GENERATE_TRIPLE_PLATE,
                 GENERATE_QUADRUPLE_PLATE,

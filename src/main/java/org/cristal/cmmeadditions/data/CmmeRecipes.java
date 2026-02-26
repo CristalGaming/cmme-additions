@@ -34,6 +34,7 @@ public final class CmmeRecipes {
         processPlateTriple(provider,material);
         processPlateQuadruple(provider,material);
         processPlateQuintuple(provider,material);
+        processPlateCurved(provider,material);
         processPlateSuperdense(provider,material);
 
         processIngotDouble(provider,material);
@@ -268,6 +269,41 @@ public final class CmmeRecipes {
         }
     }
 
+    private static void processPlateCurved(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material) {
+
+        if (!material.shouldGenerateRecipesFor(curvedPlate) || !material.hasProperty(PropertyKey.INGOT)){
+            return;
+        }
+
+        var magMaterial = material.hasFlag(IS_MAGNETIC) ?
+                material.getProperty(PropertyKey.INGOT).getMacerateInto() : material;
+        if (material.hasFlag(GENERATE_PLATE)) {
+            if (!material.hasFlag(NO_SMASHING)) {
+
+                VanillaRecipeHelper.addShapedRecipe(provider, String.format("%s_plates_to_curved_plate", material.getName()),
+                        ChemicalHelper.get(curvedPlate, magMaterial),
+                        "hPP",
+                        'P', new MaterialEntry(plate, material));
+            }
+
+            BENDER_RECIPES.recipeBuilder("bend_" + material.getName() + "_plate_to_curved_plate")
+                    .EUt(24)
+                    .inputItems(plate, material,1)
+                    .outputItems(curvedPlate, magMaterial)
+                    .duration((int) material.getMass())
+                    .circuitMeta(7)
+                    .save(provider);
+
+            BENDER_RECIPES.recipeBuilder("bend_" + material.getName() + "_ingot_to_curved_plate")
+                    .inputItems(ingot, material)
+                    .circuitMeta(7)
+                    .outputItems(curvedPlate, magMaterial)
+                    .duration((int) material.getMass()*2)
+                    .EUt(24)
+                    .save(provider);
+        }
+    }
+
     private static void processPlateSuperdense(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material) {
         if (!material.shouldGenerateRecipesFor(superdensePlate) || !material.hasProperty(PropertyKey.DUST)) {
             return;
@@ -346,6 +382,7 @@ public final class CmmeRecipes {
                 .save(provider);
 
     }
+
     private static void processIngotQuadruple(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material) {
 
         if (!material.shouldGenerateRecipesFor(quadrupleIngot) || !material.hasProperty(PropertyKey.INGOT)){
@@ -386,6 +423,7 @@ public final class CmmeRecipes {
                 .save(provider);
 
     }
+
     private static void processIngotQuintuple(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material) {
 
         if (!material.shouldGenerateRecipesFor(quintupleIngot) || !material.hasProperty(PropertyKey.INGOT)){
@@ -418,6 +456,7 @@ public final class CmmeRecipes {
                 .save(provider);
 
     }
+
     private static void processBroadRod(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material){
 
         if (!material.shouldGenerateRecipesFor(broadRod) || !material.hasProperty(PropertyKey.DUST)){

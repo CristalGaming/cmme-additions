@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "gtceu:block/material_sets/dull/cluster",
+    "tintindex": 1
+  }
+
+}
