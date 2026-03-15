@@ -1,11 +1,11 @@
-[12:04:05] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
-[12:04:05] [INIT] Loaded plugins:
-[12:04:05] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[12:04:05] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[12:04:05] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
-[12:04:05] [INIT] - org.cristal.cmmeadditions.integration.CmmeKubeJSPlugin
-[12:04:05] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
-[12:04:08] [INFO] Loaded script startup_scripts:CmmePluginTest.js in 0.072 s
-[12:04:08] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
-[12:04:08] [INFO] Loaded script startup_scripts:example.js in 0.002 s
-[12:04:08] [INFO] Loaded 2/2 KubeJS startup scripts in 1.846 s with 0 errors and 0 warnings
+[18:35:30] [INIT] KubeJS 2001.6.5-build.16; MC 2001 forge
+[18:35:30] [INIT] Loaded plugins:
+[18:35:30] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[18:35:30] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[18:35:30] [INIT] - com.gregtechceu.gtceu.integration.kjs.GregTechKubeJSPlugin
+[18:35:30] [INIT] - org.cristal.cmmeadditions.integration.CmmeKubeJSPlugin
+[18:35:30] [INIT] - com.lowdragmc.lowdraglib.kjs.LDLibKubeJSPlugin
+[18:35:31] [INFO] Loaded script startup_scripts:CmmePluginTest.js in 0.047 s
+[18:35:31] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
+[18:35:31] [INFO] Loaded script startup_scripts:example.js in 0.001 s
+[18:35:31] [INFO] Loaded 2/2 KubeJS startup scripts in 0.813 s with 0 errors and 0 warnings

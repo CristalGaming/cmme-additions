@@ -52,7 +52,7 @@ public class Budding extends Block{
         this.budSmall = budSmall;
 
         if(GTCEu.isClientSide()){
-            //MaterialBlockRenderer.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
+            MaterialBlockRenderer.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
         }
     }
 

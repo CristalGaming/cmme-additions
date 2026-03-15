@@ -60,10 +60,10 @@ public class Cluster extends Block implements SimpleWaterloggedBlock {
 
         if(GTCEu.isClientSide()){
             //ClusterRender.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
-            //MaterialBlockRenderer.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
+            MaterialBlockRenderer.create(this,tagPrefix.materialIconType(),material.getMaterialIconSet());
         }
     }
-    
+
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         Direction direction = blockState.getValue(FACING);
         switch (direction) {
@@ -82,6 +82,7 @@ public class Cluster extends Block implements SimpleWaterloggedBlock {
                 return this.upAabb;
         }
     }
+
 
     public boolean canSurvive(BlockState blockState, LevelReader levelReader, BlockPos blockPos) {
         Direction direction = blockState.getValue(FACING);

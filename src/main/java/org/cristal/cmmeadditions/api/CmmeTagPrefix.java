@@ -248,21 +248,36 @@ public class CmmeTagPrefix {
             )
             .unificationEnabled(true);
 
-    //  It is very difficult for me to implement this
+    // It is very difficult for me to implement this
 
     public static final TagPrefix cluster = new TagPrefix("cluster")
+            .idPattern("%s_cluster")
+            .defaultTagPath("clusters/%s")
+            .unformattedTagPath("clusters")
             .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budLarge = new TagPrefix("budLarge")
+            .idPattern("large_%s_bud")
+            .defaultTagPath("large_buds/%s")
+            .unformattedTagPath("large_buds")
             .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budMedium = new TagPrefix("budMedium")
+            .idPattern("medium_%s_bud")
+            .defaultTagPath("medium_buds/%s")
+            .unformattedTagPath("medium_buds")
             .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budSmall = new TagPrefix("budSmall")
+            .idPattern("small_%s_bud")
+            .defaultTagPath("small_buds/%s")
+            .unformattedTagPath("small_buds")
             .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
     public static final TagPrefix budding = new TagPrefix("budding")
+            .idPattern("%s_budding")
+            .defaultTagPath("buddings/%s")
+            .unformattedTagPath("buddings")
             .generationCondition(mat -> mat.hasProperty(PropertyKey.ORE) && mat.hasProperty(PropertyKey.GEM));
 
 
@@ -521,7 +536,7 @@ public class CmmeTagPrefix {
         wireGtOctal.customTagPath("wires/octal/%s",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/octal/"+mat.getName())
         ).customTagPath("wires/octal",(prefix, mat) ->
-                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/octal")
         ).customTagPath("wires",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
         ).customTagPath("wires/%s",(prefix, mat) ->
@@ -530,7 +545,7 @@ public class CmmeTagPrefix {
         wireGtQuadruple.customTagPath("wires/quadruple/%s",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/quadruple/"+mat.getName())
         ).customTagPath("wires/quadruple",(prefix, mat) ->
-                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/quadruple")
         ).customTagPath("wires",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
         ).customTagPath("wires/%s",(prefix, mat) ->
@@ -539,7 +554,7 @@ public class CmmeTagPrefix {
         wireGtDouble.customTagPath("wires/double/%s",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/double/"+mat.getName())
         ).customTagPath("wires/double",(prefix, mat) ->
-                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/double")
         ).customTagPath("wires",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
         ).customTagPath("wires/%s",(prefix, mat) ->
@@ -548,7 +563,7 @@ public class CmmeTagPrefix {
         wireGtSingle.customTagPath("wires/single/%s",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/single/"+mat.getName())
         ).customTagPath("wires/single",(prefix, mat) ->
-                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/hex")
+                TagUtil.createModTag(BuiltInRegistries.ITEM,"wires/single")
         ).customTagPath("wires",(prefix, mat) ->
                 TagUtil.createModTag(BuiltInRegistries.ITEM,"wires")
         ).customTagPath("wires/%s",(prefix, mat) ->

@@ -60,6 +60,8 @@ public class ClusterRender {
                             .select(Direction.EAST,
                                     Variant.variant().with(VariantProperties.Y_ROT, VariantProperties.Rotation.R270))));
             GTDynamicResourcePack.addItemModel(blockId, new DelegatedModel(modelId));
+
+
         }
     }
 

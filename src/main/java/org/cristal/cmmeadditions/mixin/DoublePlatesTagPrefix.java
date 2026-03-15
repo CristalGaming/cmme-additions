@@ -22,20 +22,8 @@ public class DoublePlatesTagPrefix {
 
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void cmme$overridePlateDouble(CallbackInfo ci) {
-        plateDouble = new TagPrefix("doublePlate")
-                .idPattern("double_%s_plate")
-                .defaultTagPath("double_plates/%s")
-                .unformattedTagPath("double_plates")
-                .langValue("Double %s Plate")
-                .materialAmount(GTValues.M * 2)
-                .maxStackSize(32)
-                .materialIconType(MaterialIconType.plateDouble)
-                .unificationEnabled(true)
-                .enableRecycling()
-                .generateItem(true)
-                .generationCondition(mat ->
+        plateDouble.generationCondition(mat ->
                         (mat.hasProperty(PropertyKey.INGOT) && mat.hasFlag(MaterialFlags.GENERATE_PLATE)  && !mat.hasFlag(MaterialFlags.NO_SMASHING)
-                        ) || mat.hasFlag(CmmeMaterialFlags.GENERATE_DOUBLE_PLATE)
-                );
+                        ) || mat.hasFlag(CmmeMaterialFlags.GENERATE_DOUBLE_PLATE));
     }
 }

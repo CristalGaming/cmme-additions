@@ -19,18 +19,8 @@ public class GTBlocksMixin {
             require = 1
     )
     private static void cmmeGenerate$init(CallbackInfo ci) {
-        CmmeBlocks.generateCrystals();
-    }
-
-    @Inject(
-            method = "init",
-            at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/common/data/GTMaterialBlocks;generateItemPipeBlocks()V"),
-            remap = false,
-            require = 1
-    )
-    private static void cmmeSetNull$init(CallbackInfo ci){
-        CmmeBlocks.CLUSTER_BLOCKS = null;
-        CmmeBlocks.BUD_BLOCKS = null;
+        //CmmeBlocks.generateCrystals();
+        // it is broken
     }
 
 }

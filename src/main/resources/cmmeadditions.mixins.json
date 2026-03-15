@@ -7,8 +7,6 @@
   "mixins": [
     "DoublePlatesTagPrefix",
     "GTBlocksMixin",
-    "LootDataManagerMixin",
-    "MaterialBlockMixin",
     "RecipeInjectionMixin"
   ],
   "client": [

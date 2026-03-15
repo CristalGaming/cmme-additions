@@ -1,29 +1,21 @@
 package org.cristal.cmmeadditions.api.blocks;
 
-import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableTable;
 import com.google.common.collect.Table;
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.GTCEuAPI;
-import com.gregtechceu.gtceu.api.block.MaterialPipeBlock;
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey;
 import com.gregtechceu.gtceu.api.data.chemical.material.registry.MaterialRegistry;
 import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
-import com.gregtechceu.gtceu.api.item.MaterialPipeBlockItem;
 import com.gregtechceu.gtceu.api.registry.registrate.GTRegistrate;
-import com.gregtechceu.gtceu.common.block.SurfaceRockBlock;
 import com.gregtechceu.gtceu.common.data.GTBlocks;
 import com.tterrag.registrate.providers.ProviderType;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullBiConsumer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import org.cristal.cmmeadditions.api.CmmeTagPrefix;
-import org.cristal.cmmeadditions.data.CmmeMaterials;
-
-import java.util.Map;
 
 import static net.minecraft.world.level.block.Blocks.*;
 
@@ -147,7 +139,7 @@ public class CmmeBlocks {
                 .register();
 
         var budding = registrate
-                .block("%s_budding".formatted(material.getName()),p->new Budding(
+                .block("budding_%s".formatted(material.getName()),p->new Budding(
                         clusterEntry.get(),
                         budLargeEntry.get(),
                         budMediumEntry.get(),

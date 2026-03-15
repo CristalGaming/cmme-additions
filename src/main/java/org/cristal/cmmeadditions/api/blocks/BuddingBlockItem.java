@@ -8,11 +8,13 @@ import net.minecraft.world.item.ItemStack;
 
 public class BuddingBlockItem extends BlockItem {
 
+    public final TagPrefix tagPrefix;
     private final Material material;
 
     public BuddingBlockItem(Budding block, Properties props, TagPrefix tagPrefix, Material mat) {
         super(block, props);
         this.material = mat;
+        this.tagPrefix = tagPrefix;
     }
 
     public static BuddingBlockItem create(Budding block,TagPrefix tagPrefix, Properties props, Material mat) {

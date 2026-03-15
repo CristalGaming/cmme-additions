@@ -29,6 +29,7 @@ import static org.cristal.cmmeadditions.api.CmmeTagPrefix.*;
 public final class CmmeRecipes {
 
     public static void run(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material) {
+
         processPlateDoubleAddition(provider,material);
 
         processPlateTriple(provider,material);
@@ -51,6 +52,8 @@ public final class CmmeRecipes {
         processCrushedOreBlock(provider,material);
         processPurifiedOreBlock(provider,material);
         processRefinedOreBlock(provider,material);
+
+
     }
     private static void processPlateDoubleAddition(@NotNull Consumer<FinishedRecipe> provider, @NotNull Material material){
         if (!material.shouldGenerateRecipesFor(plateDouble) || !material.hasProperty(PropertyKey.INGOT)){
